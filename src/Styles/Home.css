@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-contents :first-child {
+  color: white;
+  font-size: 500px;
+  font-family: Inter;
+  font-weight: 600;
+}
+
+.hero-contents :nth-child(2) {
+  color: white;
+  font-size: 30px;
+  font-family: Inter;
+}
+
+.line {
+  width: 100px;
+  height: 1px;
+  margin-top: 20px;
+  background-color: white;
+}
+
+/* Media Queries */
+
+@media (max-width: 1280px) {
+  .hero-contents :first-child {
+    font-size: 350px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero-contents :first-child {
+    font-size: 250px;
+  }
+  .hero-contents:nth-child(2) {
+    font-size: 25px;
+  }
+  .line {
+    width: 80px;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-contents :first-child {
+    font-size: 180px;
+  }
+  .hero-contents:nth-child(2) {
+    font-size: 22px;
+  }
+  .line {
+    width: 65px;
+    margin-top: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-contents :first-child {
+    font-size: 120px;
+  }
+  .hero-contents :nth-child(2) {
+    font-size: 19px;
+  }
+  .line {
+    width: 50px;
+    margin-top: 10px;
+  }
+}
+
+/* Media Queries */
